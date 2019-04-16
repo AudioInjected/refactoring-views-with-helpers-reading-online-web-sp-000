@@ -162,3 +162,7 @@ ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=1):
   app/controllers/authors_controller.rb:3:in `show'
 
 
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.4ms)
