@@ -149,3 +149,16 @@ ActionController::RoutingError (No route matches [GET] "/authors/show/1"):
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (12.5ms)
+
+
+Started GET "/authors/1" for 70.181.15.78 at 2019-04-16 16:59:58 +0000
+Cannot render console from 70.181.15.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 11ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Author with 'id'=1):
+  app/controllers/authors_controller.rb:3:in `show'
+
+
